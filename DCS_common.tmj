@@ -1,0 +1,18 @@
+USE MDEF DCSWarthog_Viper.tmm
+
+
+USE ALL_DIRECTX_BUTTONS 
+
+BTN H1U /I  /H Zoominslow 
+	/O /H Elevator_Trimmer_Switch_PUSH
+BTN H1D /I /H Zoomoutslow 
+	/O /H Elevator_Trimmer_Switch_PULL 
+BTN H1L /I Zoomnormal 
+	/O /H Aileron_Trimmer_Switch_LEFT_WING_DOWN 
+BTN H1R /I LabelsToggle
+	/O /H Aileron_Trimmer_Switch_RIGHT_WING_DOWN  
+	
+BTN H4U Chaff 
+BTN H4D Flare
+BTN H4L ECM
+Rem BTN H4R 

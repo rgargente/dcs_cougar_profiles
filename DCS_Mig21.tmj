@@ -1,0 +1,33 @@
+USE MDEF DCS Mig21.tmm
+
+
+USE ALL_DIRECTX_BUTTONS 
+
+BTN H1U /I  /H Zoominslow 
+	/O /H TrimNoseDown
+BTN H1D /I /H Zoomoutslow 
+	/O /H TrimNoseUp
+BTN H1L /I Zoomnormal 
+	/O 
+BTN H1R /I LabelsToggle
+	/O 
+
+
+
+Rem ################################################
+Rem			Throttle
+Rem ################################################
+
+Rem T6 VAICOM PRO
+
+Rem BTN T9 SpeedBrake
+
+
+Rem -------------------------------------
+Rem     Microstick/TDCSlew
+Rem -------------------------------------
+
+Rem MIX  3 HotasSlewLeft ^ HotasSlewRight
+MIY  3 TdcDown ^ TdcUp 
+
+Rem BTN T1 ShkvalBoresight

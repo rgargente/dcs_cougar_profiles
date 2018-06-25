@@ -1,0 +1,81 @@
+
+USE MDEF DCS_Su27.tmm
+
+
+USE ALL_DIRECTX_BUTTONS 
+
+
+
+Rem ################################################
+Rem			Joystick
+Rem ################################################
+
+BTN H1U /I  /H Zoominslow 
+	/O /H TrimNoseDown
+BTN H1D /I /H Zoomoutslow 
+	/O /H TrimNoseUp 
+BTN H1L /I Zoomnormal 
+	/O /H TrimLeftWingDown
+BTN H1R /I LabelsToggle
+	/O /H TrimRightWingDown  
+
+BTN S4 NoseWheelSteering
+
+BTN H2U /I /H RadarTiltUp
+        /O LockTarget
+BTN H2D /I /H RadarTiltDown
+        /O UnlockTarget
+BTN H2L /I  RadarTiltLeft
+        /O
+BTN H2R /I RadarTiltRight
+        /O TWS
+
+BTN H3U /I ModeVert
+	/O ExpectedRangeInc
+BTN H3D /I ModeNav
+	/O ExpectedRangeReduce
+BTN H3L /I /T ModeBore /T ModeHelmet /T ModeMissileSensor
+         /O Cannon 
+BTN H3R /I ModeBvr
+	/O WeaponChange
+
+
+BTN H4U /I RadarToggle
+	/O Chaff 
+BTN H4D /I o Rem  IR sensor
+	/O Flare
+BTN H4L ECM
+Rem BTN H4R
+
+ 
+
+Rem Rem ################################################
+Rem Rem			Throttle
+Rem Rem ################################################
+
+BTN T3 /I APAltHold
+	/O APEngage
+
+BTN T5 /I MfdZoomOut
+	/O WaypointPrev
+BTN T4 /I MfdZoomIn
+	/O WaypointNext
+
+Rem PRF Up = High, Middle = Int, Down = Med
+BTN T7 /I
+	/O /P PRF /R PRF PRF 
+BTN T8 /I
+	/O /P PRF PRF /R PRF
+
+BTN T6 /I 
+	/O /H DX24
+	 
+BTN T9 SpeedBrake
+BTN T10 p Rem Parachute
+
+Rem -------------------------------------
+Rem     Microstick/TDCSlew
+Rem -------------------------------------
+
+MIX  3 HotasSlewLeft ^ HotasSlewRight
+MIY  3 HotasSlewDown ^ HotasSlewUp 

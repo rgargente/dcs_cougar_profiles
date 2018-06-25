@@ -1,0 +1,456 @@
+		
+
+rem------------------------------------------------------------------------------------------
+rem	Systems
+rem------------------------------------------------------------------------------------------
+
+Cockpitdooropen/close = {RCTL c}
+Eject_3times = {LCTL e}
+SPU-9Radiocommunicatorselector = {LCTL LALT /}
+
+
+rem------------------------------------------------------------------------------------------
+rem	CHEAT
+rem------------------------------------------------------------------------------------------
+
+ActivePause = {LSHF LWIN PAUSE}
+Explosion = {LSHF LCTL x}
+Levitation = {LALT h}
+
+
+rem------------------------------------------------------------------------------------------
+rem	COMMUNICATIONS
+rem------------------------------------------------------------------------------------------
+
+AskAwacsAvailableTanker = {LWIN i}
+AskAwacsHomeAirbase = {LWIN u}
+AttackAirDefenses = {LWIN d}
+AttackGroundTargets = {LWIN g}
+AttackMyTarget = {LWIN q}
+CommunicationMenu = \
+CoverMe = {LWIN w}
+WingmanCompleteMissionRtb = {LWIN e}
+WingmanCompleteMissionRejoin = {LWIN r}
+JoinUpFormation = {LWIN y}
+SwitchDialog = {LSHF \}
+ToggleFormation = {LWIN t}
+
+rem------------------------------------------------------------------------------------------
+rem	DEBUG
+rem------------------------------------------------------------------------------------------
+
+ReloadCockpit = {LCTL r}
+
+rem------------------------------------------------------------------------------------------
+rem	FAC
+rem------------------------------------------------------------------------------------------
+
+BinocularLaserIlluminationToggle = {LALT l}
+BinocularViewIRMode = {LWIN z}
+BinocularViewToggle = {LWIN b}
+
+rem------------------------------------------------------------------------------------------
+rem	FLIGHT CONTROL
+rem------------------------------------------------------------------------------------------
+
+FlyPitchUp = UARROW
+FlyPitchDown = DARROW
+FlyRollLeft = LARROW
+FlyRollRight = RARROW
+ResetTrimmers = {LCTL t}
+RudderLeft = z
+RudderRight = x
+ThrottleCommonDown = KP-
+ThrottleCommonUp = KP+
+ThrottleLeftDown = {RALT KP-}
+ThrottleLeftDownStep = {RSHF PGDN}
+ThrottleLeftUp = {RSHF KP+}
+ThrottleLeftUpStep = {RALT PGUP}
+ThrottleRightDown = {RSHF KP-}
+ThrottleRightDownStep = {RSHF PGDN}
+ThrottleRightUp = {RSHF KP+}
+ThrottleRightUpStep = {RSHF PGUP}
+
+Speedbrake = b
+
+rem------------------------------------------------------------------------------------------
+rem	GENERAL
+rem------------------------------------------------------------------------------------------
+
+CoordinatesUnitsChange = {LALT y}
+Endmission = ESC
+Pause = BRK
+Timeaccelerate = {LCTL z}
+Timedecelerate = {LALT z}
+Timenormal = {LSHF z}
+Scorewindow = '
+Multiplayerchat-modeAll = TAB
+Multiplayerchat-modeAllies = {RCTL \}
+Infobartoggle = {LCTL y}
+GetNewPlane-respawn = {RCTL RSHF TAB}
+ClickablemousecockpitmodeOn/Off = {LALT c}
+Screenshot = PRNTSCRN
+Frameratecounter-Serviceinfo = {RCTL BRK}
+Showcontrolsindicator = {RCTL ENT}
+
+WaypointNext={LCTL `}
+WaypointPrev={LSHF `}
+
+rem------------------------------------------------------------------------------------------
+rem	HOTAS
+rem------------------------------------------------------------------------------------------
+
+EmergencyDisconnectLever = {LALT e}
+GunTrigger_2 = SPC
+GunTrigger_1 = p
+HotasBoatSwitchAft = {RALT LARROW}
+HotasBoatSwitchCenter = {RALT DARROW}
+HotasBoatSwitchForward = {RALT RARROW}
+HotasCMSZaxis = -
+HotasCMSAft = 8
+HotasCMSForward = 7
+HotasCMSLeft = 9
+HotasCMSRights = 0
+HotasChinaHatAft = c
+HotasChinaHatForward = v
+HotasCoolieSwitchDown = j
+HotasCoolieSwitchLeft = h
+HotasCoolieSwitchRight = k
+HotasCoolieSwitchUp = u
+HotasDMSDown = END
+HotasDMSLeft = DEL
+HotasDMSRight = PGDN
+HotasDMSUp = HOME
+HotasLeftThrottleButton = q
+HotasMicSwitchAft = {LSHF KP-}
+HotasMicSwitchDown = {LALT KP-}
+HotasMicSwitchForward = {LALT KP+}
+HotasMicSwitchUp = {LSHF KP+}
+HotasMasterModeControlButton = m
+HotasNosewhellSteeringButton = INS
+HotasPinkySwitchAft = {LCTL p}
+HotasPinkySwitchCenter = {LSHF p}
+HotasPinkySwitchForward = {LALT  p}
+HotasSlewDown = .
+HotasSlewLeft = ,
+HotasSlewRight = /
+HotasSlewUp = ;
+HotasSpeedBrakeSwitchAft = {LCTL b}
+HotasSpeedBrakeSwitchForward = {LSHF b}
+HotasTMSDown = {LCTL DARROW}
+HotasTMSLeft = {LCTL LARROW}
+HotasTMSRight = {LCTL RARROW}
+HotasTMSUp = {LCTL UARROW}
+TrimLeftWingDown = {RCTL ,}
+TrimNoseDown = {RCTL ;}
+TrimNoseUp = {RCTL .}
+TrimRightWingDown = {RCTL /}
+WeaponRelease = {RALT SPC}
+
+
+rem------------------------------------------------------------------------------------------
+rem  AP
+rem------------------------------------------------------------------------------------------
+
+APEngage = a
+APAltHold = h
+
+rem------------------------------------------------------------------------------------------
+rem	RUDDER
+rem------------------------------------------------------------------------------------------
+
+Rudderleft = z
+Rudderright = x
+
+rem------------------------------------------------------------------------------------------
+rem	SENSORS
+rem------------------------------------------------------------------------------------------
+
+ToggleGoggles = {RSHF h}
+
+rem------------------------------------------------------------------------------------------
+rem	Labels
+rem------------------------------------------------------------------------------------------	
+
+AllLabels = {LSHF F10}
+AircraftLabels = {LSHF F2}
+MissileLabels = {LSHF F6}
+Vehicle&ShipLabels = {LSHF F9}
+
+rem------------------------------------------------------------------------------------------
+rem	STABILITY AUGMENTATION SYSTEM
+rem------------------------------------------------------------------------------------------
+
+YawTrimLeft = {RCTL z}
+YawTrimRight = {RCTL x}
+
+rem------------------------------------------------------------------------------------------
+rem	SYSTEMS
+rem------------------------------------------------------------------------------------------
+
+BeginRefuel = r
+Cockpitdooropen/close = {LCTL c}
+
+
+
+
+CockpitIllumination = l
+Eject_3times = {LCTL e}
+EmergencyGear = {RALT g}
+EmergencyWheelBrake = {RWIN w}
+EngineStart = {RWIN HOME}
+EngineStop = {RWIN END}
+FlapsDown = f
+FlapsUp = {LSHF f}
+HUDColor = {RCTL h}
+JettisonFuelTanks = {RALT r}
+JettisonWeapons = {LCTL w}
+LeftEngineStart = {RALT HOME}
+LeftEngineStop = {RALT END}
+ResetCurrentAudibleWarning = {RSHF n}
+RightEngineStart = {RCTL HOME}
+RightEngineStop = {RCTL END}
+StartStopResetFlightClock = {RWIN c}
+ToggleArrestorHook = {LALT g}
+ToggleGearLightNearFarOff = {RALT l}
+ToggleLandingGearDown = {LSHF g}
+ToggleLandingGearUp = {LCTL g}
+ToggleLandingGearUpDown = g
+ToggleNavigationLights = {RCTL l}
+ToggleRefuelingBoom = {LCTL r}
+ToggleSmoke = {LSHF t}
+WheelBrakeLeftOnOff = {LSHF w}
+WheelBrakeOnOff = w
+WheelBrakeRightOnOff = {LALT w}
+
+rem------------------------------------------------------------------------------------------
+rem	TEMPORAL
+rem------------------------------------------------------------------------------------------
+
+LampsTest = {LSHF l}
+
+rem------------------------------------------------------------------------------------------
+rem	View
+rem------------------------------------------------------------------------------------------
+
+ViewLeftslow = KP4 
+ViewRightslow = KP6 
+ViewUpslow = KP8 
+ViewDownslow = KP2 
+ViewUpRightslow = KP9
+ViewDownRightslow = KP3 
+ViewDownLeftslow = KP1 
+ViewUpLeftslow = KP7 
+CenterView = KP5 
+Zoominslow = KP* 
+Zoomoutslow = KP/ 
+Zoomnormal = KPENT
+Zoomexternalin = {RCTL KP*}
+Zoomexternalout = {RCTL KP/}
+Zoomexternalnormal = {RCTL KPENT}
+F11cameramovingforward = {LALT KP*}
+F11cameramovingbackward = {LALT KP/}
+Objectsswitchingdirectionforward = {LCTL PGDN}
+Objectsswitchingdirectionreverse = {LCTL PGUP}
+Objectexclude = {LALT DEL}
+Objectsallexcluded-include = {LALT INS}
+F1Cockpitview = F1 
+F1Naturalheadmovementview = {LCTL F1}
+F1HUDonlyviewswitch = {LALT F1}
+F2Aircraftview = F2 
+F2Viewownaircraft = {LCTL F2}
+F2Togglecameraposition = {RALT F2}
+F2Togglelocalcameracontrol = {LALT F2}
+F3Fly-Byview = F3 
+F3Fly-Byjumpview = {LCTL F3}
+F4Lookbackview = F4
+F4Chaseview = {LCTL F4}
+F4ArcadeChaseview = {LSHF F4}
+F5Airhostileview = F5
+F5Groundhostileview = {LCTL F5}
+F6Releasedweaponview = F6 			
+F6Weapontotargetview = {LCTL F6}
+F7Groundunitview = F7 
+F8Targetview = F8
+F8Playertargets/Alltargetsfilter = {RALT F8}
+F9Shipview = F9 
+F9Landingsignalofficerview = {LALT F9}
+F10Theatermapview = F10
+F10Jumptotheatermapviewovercurrentpoint = {LCTL F10}
+F11Airportfreecamera = F11
+F11Jumptofreecamera = {LCTL F11}
+F12Staticobjectview = F12
+F12Civiltrafficview = {LCTL F12}
+F12Trains/carstoggle = {LSHF F12}
+
+
+
+rem------------------------------------------------------------------------------------------
+rem	View Cockpit
+rem------------------------------------------------------------------------------------------
+
+Cockpitpanelviewin = KP0
+Cockpitpanelviewtoggle = {RCTL KP0}
+SaveCockpitAngles = {RALT KP0}
+Viewup = {RSHF KP8}
+Viewdown = {RSHF KP2}
+Viewleft = {RSHF KP4}
+Viewright = {RSHF KP6}
+Viewupright = {RSHF KP9}
+Viewdownright = {RSHF KP3}
+Viewdownleft = {RSHF KP1}
+Viewupleft = {RSHF KP7}
+Fastcockpitkeyboard = {LSHF ]}
+Slowcockpitkeyboard = {LCTL ]}
+Normalcockpitkeyboardspeed = {LALT ]}
+Fastcockpitmouse = {LSHF [}
+Slowcockpitmouse = {LCTL [}
+Normalcockpitmousespeed = {LALT [}
+Cameraviewup = {RCTL KP8}
+Cameraviewdown = {RCTL KP2}
+Cameraviewleft = {RCTL KP4}
+Cameraviewright = {RCTL KP6}
+Cameraviewup-left = {RCTL KP7}
+Cameraviewdown-left = {RCTL KP1}
+Cameraviewup-right = {RCTL KP9}
+Cameraviewdown-right = {RCTL KP3}
+Cameraviewupslow = {RALT KP8}
+Cameraviewdownslow = {RALT KP2}
+Cameraviewleftslow = {RALT KP4}
+Cameraviewrightslow = {RALT KP6}
+Cameraviewup-leftslow = {RALT KP7}
+Cameraviewdown-leftslow = {RALT KP1}
+Cameraviewup-rightslow = {RALT KP9}
+Cameraviewdown-rightslow = {RALT KP3}
+Centercameraview = {RSHF KP5}
+Returncamera = {RCTL KP5}
+Returncamerabase = {RALT KP5}
+SnapView0 = USB (DE3 D62 U62 UE3)
+SnapView1 = USB (DE3 D59 U59 UE3)
+SnapView2 = USB (DE3 D5A U5A UE3)
+SnapView3 = USB (DE3 D5B U5B UE3)
+SnapView4 = USB (DE3 D5C U5C UE3)
+SnapView5 = USB (DE3 D5D U5D UE3)
+SnapView6 = USB (DE3 D5E U5E UE3)
+SnapView7 = USB (DE3 D5F U5F UE3)
+SnapView8 = USB (DE3 D60 U60 UE3)
+SnapView9 = USB (DE3 D61 U61 UE3)
+Headshiftmovementon/off =  USB (DE3 D3A U3A UE3)
+Zoomout = {RSHF KP/}
+Zoomin = {RSHF KP*}
+CockpitCameraMoveUp = {RCTL RSHF KP8}
+CockpitCameraMoveDown = {RCTL RSHF KP2}
+CockpitCameraMoveLeft = {RCTL RSHF KP4}
+CockpitCameraMoveRight = {RCTL RSHF KP6}
+CockpitCameraMoveForward = {RCTL RSHF KP*}
+CockpitCameraMoveBack = {RCTL RSHF KP/}
+CockpitCameraMoveCenter = {RCTL RSHF KP5}
+
+rem------------------------------------------------------------------------------------------
+rem	View Extended
+rem------------------------------------------------------------------------------------------
+
+Camerajiggletoggle = {LSHF j}
+Keepterraincameraaltitude = {LALT k}
+Toggletrackingfireweapon = {RCTL KP+}
+Viewfriendsmode = {RCTL RSHF RALT f}
+Viewenemiesmode = {RCTL RSHF RALT d}
+Viewallmode = {RCTL RSHF RALT s}
+LabelsToggle={LSHF F10}
+
+rem------------------------------------------------------------------------------------------
+rem	View Padlock
+rem------------------------------------------------------------------------------------------
+
+Lockview_cyclepadlock = KP.
+Unlockview_stoppadlock = NUML
+Lockterrainview = {RCTL KP.}
+
+rem------------------------------------------------------------------------------------------
+rem------------------------------------------------------------------------------------------
+rem	OTHER AIRCRAFT (GENERAL)
+rem------------------------------------------------------------------------------------------
+rem------------------------------------------------------------------------------------------
+WeaponChange=d
+RippleQty={LCTL SPC}
+RippleTime=v
+F15NoseWheelSteering=s
+WaypointNext={LCTL `}
+Flare= DEL
+Chaff= INS
+ECM=e
+Cannon=c
+
+rem------------------------------------------------------------------------------------------
+rem	Su25T 
+rem------------------------------------------------------------------------------------------
+ShkvalBoresight={RCTL i}
+ShkvalZoomIn={=}
+ShkvalZoomOut={-}
+TargetSizeUp={RCTL ]}
+TargetSizeDown={RCTL [}
+
+rem------------------------------------------------------------------------------------------
+rem	F15 Radar
+rem------------------------------------------------------------------------------------------
+RadarToggle=i
+LockTarget=ENT
+UnlockTarget= BSP
+TWS= {RALT i}
+ScanAreaReduce = {RCTL -}
+ScanAreaInc = {RCTL =}
+RadarTiltUp = {RSHF ;}
+RadarTiltDown = {RSHF .}
+
+PRF={RSHF i}
+
+ModeNav=1
+ModeBvr=2
+ModeVert=3
+ModeBore=4
+ModeHelmet=5
+CagedAndFlooded=6
+
+rem------------------------------------------------------------------------------------------
+rem	F5
+rem------------------------------------------------------------------------------------------
+
+F5WeaponRelease={RSHF SPC}
+OverrideStickLimiter=l
+ThrottleDetent={LALT r}
+
+GunTrigger_1F5={LALT g}
+GunTrigger_2F5={LALT SPC}
+
+Aileron_Trimmer_Switch_LEFT_WING_DOWN = {RCTL ,}	
+Aileron_Trimmer_Switch_RIGHT_WING_DOWN = {RCTL /}	
+Elevator_Trimmer_Switch_PULL = {RCTL .}	
+Elevator_Trimmer_Switch_PUSH = {RCTL ;}	
+
+RadarRangeDec=-
+RadarRangeInc==
+DogfightSwitchCnt=r
+DogfightSwitchAftDG=6
+DogfightSwitchFwdDM=5
+
+ChaffFlare=q
+
+RadarOperRight=0
+RadarOperLeft=9
+
+FlapSwitchUp={LSHF f}
+FlapSwitchFix={LCTL f}
+FlapSwitchAuto=f
+
+CageSight={LSHF c}
+UncageMissile={RSHF m}
+
+rem------------------------------------------------------------------------------------------
+rem	F86 Sabre
+rem------------------------------------------------------------------------------------------
+
+rem Hotas ----------------------------------
+SabreTrigger1={LSHF Spc}
+SabreTrigger2=Spc
+Caging= `
+

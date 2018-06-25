@@ -1,0 +1,76 @@
+USE MDEF DCS_Su25T.tmm
+
+USE ALL_DIRECTX_BUTTONS 
+
+Rem ################################################
+Rem			Joystick
+Rem ################################################
+
+BTN H1U /I  /H Zoominslow 
+	/O /H TrimNoseDown
+BTN H1D /I /H Zoomoutslow 
+	/O /H TrimNoseUp 
+BTN H1L /I Zoomnormal 
+	/O /H TrimLeftWingDown
+BTN H1R /I LabelsToggle
+	/O /H TrimRightWingDown  
+
+BTN TG1  /H GunTrigger_2
+BTN TG2 /H GunTrigger_2 
+
+BTN S1  /H APOverride
+BTN S2 /I APLevel
+	/O APDisengage
+BTN S4 /H WheelBrakeOnOff
+
+BTN H2U /I Laser
+        /O LockTarget
+BTN H2D /I NightMode 
+	/O ShkvalOn
+BTN H2L  /H TargetSizeDown
+BTN H2R /H TargetSizeUp
+
+BTN H3U ShkvalZoomIn
+BTN H3D ShkvalZoomOut
+BTN H3L /I RippleTime
+        /O Cannon
+BTN H3R /I  RippleQty 
+	/O WeaponChange
+
+BTN H4U Chaff 
+BTN H4D Flare
+BTN H4L ECM
+Rem BTN H4R 
+
+
+
+Rem ################################################
+Rem			Throttle
+Rem ################################################
+
+Rem T6 VAICOM PRO
+
+BTN T9 SpeedBrake
+BTN T10 p Rem parachute
+
+
+Rem MODES
+BTN T7 /P 6 ModeA2A
+	/R 1 ModeNav ModeNav ModeNav ModeNav
+BTN T8 /P ModeA2G
+	/R 1 ModeNav ModeNav ModeNav ModeNav
+
+BTN T3 /I APAttHold
+	/O APEngage
+
+BTN T5 WaypointPrev
+BTN T4 WaypointNext
+
+Rem -------------------------------------
+Rem     Microstick/TDCSlew
+Rem -------------------------------------
+
+MIX  3 HotasSlewLeft ^ HotasSlewRight
+MIY  3 HotasSlewDown ^ HotasSlewUp 
+
+BTN T1 ShkvalBoresight

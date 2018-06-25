@@ -1,0 +1,92 @@
+USE MDEF DCS_A10C.tmm
+
+USE HAT1 FORCED_CORNERS
+Rem     USE ALL_DIRECTX_BUTTONS 
+
+Rem ################################################
+Rem			Joystick
+Rem ################################################
+
+BTN H1U /I  /H Zoominslow 
+	/O /H TrimNoseDown
+BTN H1D /I /H Zoomoutslow 
+	/O /H TrimNoseUp 
+BTN H1L /I Zoomnormal 
+	/O /H TrimLeftWingDown
+BTN H1R /I LabelsToggle
+	/O /H TrimRightWingDown  
+
+BTN TG1 /I 
+        /O /H GunTrigger_1 
+BTN TG2 /I 
+        /O /H GunTrigger_2 
+BTN S2 /I 
+       /O /H WeaponRelease 
+
+BTN S1 /I ResetTrimmers 
+       /O HotasMasterModeControlButton 
+BTN S4 /I  
+       /O /H HotasNosewhellSteeringButton
+
+BTN H2U /I /       
+	/O /H HotasTMSUp
+BTN H2D /I      
+	/O /H HotasTMSDown 
+BTN H2L /I 
+        /O /H HotasTMSLeft 
+BTN H2R /I 
+        /O /H HotasTMSRight 
+
+BTN H3U /I H HotasCoolieSwitchUp
+        /O /H HotasDMSUp
+BTN H3D /I  /H HotasCoolieSwitchDown
+        /O /H HotasDMSDown 
+BTN H3L /I  /H HotasCoolieSwitchLeft
+        /O /H HotasDMSLeft 
+BTN H3R /I /H HotasCoolieSwitchRight
+        /O /H HotasDMSRight 
+
+
+BTN H4U /I HotasCMSZaxis 
+        /O HotasCMSForward 
+BTN H4D /I HotasPinkySwitchCenter
+        /O HotasCMSAft 
+BTN H4L /I HotasPinkySwitchAft 
+        /O HotasCMSLeft 
+BTN H4R /I HotasPinkySwitchForward 
+        /O HotasCMSRights 
+
+Rem ################################################
+Rem			Throttle
+Rem ################################################
+
+Rem T2/T3/T4/T5
+
+BTN T2 
+BTN T3 /I /H  HotasMicSwitchDown
+	/O
+BTN T4 /I  /H  HotasMicSwitchForward  
+       /O H HotasChinaHatForward 
+BTN T5 /I /H  HotasMicSwitchAft
+       /O /H HotasChinaHatAft
+
+Rem T6
+
+BTN T6 /I /T LAAPPathHold /T LAAPAltitudeHeadingHold /T LAAPAltitudeBankHold 
+       /O HotasLeftThrottleButton
+
+Rem T7/T8/T9/T10
+
+BTN T7 /I 
+       /O /P HotasBoatSwitchAft /R HotasBoatSwitchCenter
+BTN T8 /I 
+       /O /P HotasBoatSwitchForward /R HotasBoatSwitchCenter 
+BTN T9  /H  HotasSpeedBrakeSwitchAft 
+BTN T10 /H HotasSpeedBrakeSwitchForward 
+
+Rem -------------------------------------
+Rem     Microstick/TDCSlew
+Rem -------------------------------------
+
+MIX  3 HotasSlewLeft ^ HotasSlewRight
+MIY  3 HotasSlewDown ^ HotasSlewUp 

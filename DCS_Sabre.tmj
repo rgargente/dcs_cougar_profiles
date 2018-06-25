@@ -1,0 +1,51 @@
+Rem ################################################
+Rem
+Rem              	DCSWarthog_Viper.tmj 
+Rem              	for
+Rem		DCS: Warthog
+Rem               
+Rem	       	by Viper - Cavallers del Cel
+Rem         	Last modified: 25 marzo 2018, 8:04 pm
+Rem		Controllers: Thrustmaster Cougar
+Rem           	
+Rem ################################################
+
+USE MDEF DCS_Sabre.tmm
+
+USE ALL_DIRECTX_BUTTONS 
+
+
+Rem ################################################
+Rem			Joystick
+Rem ################################################
+BTN H1U /I  /H ZoomIn
+	/O /H Elevator_Trimmer_Switch_PUSH
+BTN H1D /I /H ZoomOut
+	/O /H Elevator_Trimmer_Switch_PULL 
+BTN H1L /I Zoomnormal 
+	/O /H Aileron_Trimmer_Switch_LEFT_WING_DOWN 
+BTN H1R /I LabelsToggle
+	/O /H Aileron_Trimmer_Switch_RIGHT_WING_DOWN  
+
+
+
+
+Rem ################################################
+Rem			Throttle
+Rem ################################################
+
+BTN T7 /P FlapsUp /R FlapsNeutral
+BTN T8 /P FlapsDown /R FlapsNeutral
+
+BTN T9  /P BrakesOut /R BrakesNeutral
+BTN T10  /P BrakesIn /R BrakesNeutral
+
+Rem -------------------------------------
+Rem     Microstick/TDCSlew
+Rem -------------------------------------
+
+Rem MIX  3 HotasSlewLeft ^ HotasSlewRight
+Rem MIY  3 HotasSlewDown ^ HotasSlewUp 
+
+Rem BTN T1 ShkvalBoresight
+Rem 

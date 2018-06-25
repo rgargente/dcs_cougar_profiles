@@ -1,0 +1,76 @@
+USE MDEF DCS_F15.tmm
+
+
+USE ALL_DIRECTX_BUTTONS 
+
+Rem ################################################
+Rem			Joystick
+Rem ################################################
+
+BTN H1U /I  /H Zoominslow 
+	/O /H TrimNoseDown
+BTN H1D /I /H Zoomoutslow 
+	/O /H TrimNoseUp 
+BTN H1L /I Zoomnormal 
+	/O /H TrimLeftWingDown
+BTN H1R /I LabelsToggle
+	/O /H TrimRightWingDown  
+
+BTN TG1 /H GunTrigger_2
+BTN TG2 /H GunTrigger_2 
+
+BTN S1 /I ResetTrimmers 
+	/O 
+BTN S2 /H WeaponRelease 
+BTN S4 /I F15NoseWheelSteering  
+       /O /H WheelBrakeOnOff
+
+BTN H2U LockTarget
+BTN H2D /I /H 
+        /O UnlockTarget
+BTN H2L  /T ScanAreaReduce /T ScanAreaInc
+BTN H2R /I CagedAndFlooded
+        /O TWS
+
+BTN H3U /I ModeVert
+	/O /H RadarTiltDown
+BTN H3D /I ModeNav
+	/O /H RadarTiltUp
+BTN H3L /I ModeBore
+         /O Cannon 
+BTN H3R /I ModeBvr
+	/O WeaponChange
+
+BTN H4U /I RadarToggle
+	/O Chaff 
+BTN H4D Flare
+BTN H4L ECM
+Rem BTN H4R 
+
+Rem ################################################
+Rem			Throttle
+Rem ################################################
+
+BTN T3 /I APAltHold
+	/O APEngage
+
+BTN T5 WaypointPrev
+BTN T4 WaypointNext
+
+BTN T6 /I RadarToggle
+	/O /H DX24
+	 
+BTN T9 SpeedBrake
+
+BTN T7 /P PRF /R PRF PRF Rem High
+BTN T8 /P PRF PRF /R PRF Rem Med
+
+
+Rem -------------------------------------
+Rem     Microstick/TDCSlew
+Rem -------------------------------------
+
+MIX  3 HotasSlewLeft ^ HotasSlewRight
+MIY  3 HotasSlewDown ^ HotasSlewUp 
+
+BTN T1 ShkvalBoresight

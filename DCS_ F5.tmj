@@ -1,0 +1,82 @@
+USE MDEF DCSWarthog_Viper.tmm
+
+USE ALL_DIRECTX_BUTTONS 
+
+Rem MAKE SURE YOU HAVE THIS CONFIG IN THE COUGAR CONTROL PANEL!
+Rem USE AXES_CONFIG (1, JOYX), (2, JOYY), (3, THR), (4, RDDR), (5, RNG), (6, ANT)
+
+Rem ################################################
+Rem			Joystick
+Rem ################################################
+
+Rem Set these in sim
+BTN TG1  /H GunTrigger_1F5
+BTN TG2 /H GunTrigger_2F5
+
+BTN S1 /I SWAP (ANT, RDDR) Rem See note above about axis config
+       /O
+
+BTN S2 /H F5WeaponRelease  Rem Set in sim!
+
+BTN S4  /H { F15NoseWheelSteering OverrideStickLimiter }
+
+Rem H1 Set in sim
+Rem BTN H1U TrimNoseDown 
+Rem BTN H1D TrimNoseUp 
+Rem BTN H1L TrimLeftWingDown 
+Rem BTN H1R TrimRightWingDown 
+BTN H1U /I  /H Zoominslow 
+	/O /H Elevator_Trimmer_Switch_PUSH
+BTN H1D /I /H Zoomoutslow 
+	/O /H Elevator_Trimmer_Switch_PULL 
+BTN H1L /I Zoomnormal 
+	/O /H Aileron_Trimmer_Switch_LEFT_WING_DOWN 
+BTN H1R /I LabelsToggle
+	/O /H Aileron_Trimmer_Switch_RIGHT_WING_DOWN  
+
+
+BTN H2U /H LockTarget
+BTN H2D DogfightSwitchCnt
+BTN H2L DogfightSwitchAftDG
+BTN H2R DogfightSwitchFwdDM
+
+Rem BTN H3U /I ModeVert
+Rem 	/O WaypointNext
+Rem BTN H3D /I ModeNav
+Rem 	/O 
+Rem BTN H3L /I ModeBore
+Rem          /O Cannon 
+Rem BTN H3R /I ModeBvr
+Rem 	/O WeaponChange
+
+BTN H4U /H q Rem ChaffFlare 
+BTN H4D /H q Rem ChaffFlare
+Rem BTN H4L 
+Rem BTN H4R 
+
+Rem ################################################
+Rem			Throttle
+Rem ################################################
+
+BTN T2 /H CageSight
+BTN T3 /H UncageMissile
+
+
+BTN T5 RadarOperLeft
+BTN T4 RadarOperRight
+
+BTN T7 /P FlapSwitchAuto /R FlapSwitchFix
+BTN T8 /P FlapSwitchUp /R FlapSwitchFix
+
+BTN T9  b Rem speedbrake
+BTN T10 p Rem parachute
+
+RNG 1 4  RadarRangeDec RadarRangeInc
+
+Rem -------------------------------------
+Rem     Microstick/TDCSlew
+Rem -------------------------------------
+
+MIX  3 HotasSlewLeft ^ HotasSlewRight
+MIY  3 HotasSlewDown ^ HotasSlewUp 
+

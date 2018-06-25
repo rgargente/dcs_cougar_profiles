@@ -1,0 +1,19 @@
+ZoomIn = KP* 
+ZoomOut = KP/ 
+Zoomnormal = KPENT
+
+LabelsToggle={LSHF F10}
+
+Aileron_Trimmer_Switch_LEFT_WING_DOWN = {RCTL ,}	
+Aileron_Trimmer_Switch_RIGHT_WING_DOWN = {RCTL /}	
+Elevator_Trimmer_Switch_PULL = {RCTL .}	
+Elevator_Trimmer_Switch_PUSH = {RCTL ;}	
+
+
+BrakesIn = {LALT LSHF b}
+BrakesOut = {LSHF b}
+BrakesNeutral = b
+
+FlapsDown = {LSHF f}
+FlapsNeutral = {LALT f}
+FlapsUp = {LCTL f}
