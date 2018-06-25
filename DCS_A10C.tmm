@@ -1,16 +1,4 @@
-Rem ##############################################
-Rem
-Rem		DCSWarthog_Viper.tmm
-Rem		for
-Rem		DCS: Warthog
-Rem
-Rem		by Viper - Cavallers del Cel
-Rem		Last modified: 22 junio 2018, 9:13 pm
-Rem		Controllers: Thrustmaster Cougar
-Rem
-Rem ##############################################
-Rem USB (E7)  rem right windowkey
-Rem USB (E3)  rem left windowkey
+
 
 rem------------------------------------------------------------------------------------------
 rem	Custom Viper

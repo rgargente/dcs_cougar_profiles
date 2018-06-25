@@ -49,11 +49,11 @@ BTN H3R /I /H HotasCoolieSwitchRight
 
 BTN H4U /I HotasCMSZaxis 
         /O HotasCMSForward 
-BTN H4D /I HotasPinkySwitchCenter
+BTN H4D /I HotasBoatSwitchCenter
         /O HotasCMSAft 
-BTN H4L /I HotasPinkySwitchAft 
+BTN H4L /I HotasBoatSwitchAft
         /O HotasCMSLeft 
-BTN H4R /I HotasPinkySwitchForward 
+BTN H4R /I HotasBoatSwitchForward 
         /O HotasCMSRights 
 
 Rem ################################################
@@ -78,9 +78,9 @@ BTN T6 /I /T LAAPPathHold /T LAAPAltitudeHeadingHold /T LAAPAltitudeBankHold
 Rem T7/T8/T9/T10
 
 BTN T7 /I 
-       /O /P HotasBoatSwitchAft /R HotasBoatSwitchCenter
+       /O /P HotasPinkySwitchAft  /R HotasPinkySwitchCenter
 BTN T8 /I 
-       /O /P HotasBoatSwitchForward /R HotasBoatSwitchCenter 
+       /O /P HotasPinkySwitchForward /R HotasPinkySwitchCenter
 BTN T9  /H  HotasSpeedBrakeSwitchAft 
 BTN T10 /H HotasSpeedBrakeSwitchForward 
 
