@@ -40,7 +40,7 @@ BTN H3R /I  RippleQty
 BTN H4U Chaff 
 BTN H4D Flare
 BTN H4L ECM
-Rem BTN H4R 
+BTN H4R RadarDetectionMode
 
 
 

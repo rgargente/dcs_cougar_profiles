@@ -5,7 +5,7 @@ Rem		for
 Rem		DCS: Warthog
 Rem
 Rem		by Viper - Cavallers del Cel
-Rem		Last modified: 09 febrero 2018, 9:13 pm
+Rem		Last modified: 04 julio 2018, 2:39 pm
 Rem		Controllers: Thrustmaster Cougar
 Rem
 Rem ##############################################
@@ -35,6 +35,9 @@ APOverride={LALT a} Rem Momentary Autopilot Override
 APLevel={LALT 3} 
 APAttHold={LALT 1}
 APDisengage={LALT 9}
+
+RadarDetectionMode = i
+
 
 rem------------------------------------------------------------------------------------------
 rem	COMMUNICATIONS
