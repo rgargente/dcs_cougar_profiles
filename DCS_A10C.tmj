@@ -24,7 +24,7 @@ BTN S2 /I
        /O /H WeaponRelease 
 
 BTN S1 /I ResetTrimmers 
-       /O HotasMasterModeControlButton 
+       /O /H HotasMasterModeControlButton 
 BTN S4 /I  
        /O /H HotasNosewhellSteeringButton
 
@@ -37,13 +37,13 @@ BTN H2L /I
 BTN H2R /I 
         /O /H HotasTMSRight 
 
-BTN H3U /I H HotasCoolieSwitchUp
+BTN H3U /I  
         /O /H HotasDMSUp
-BTN H3D /I  /H HotasCoolieSwitchDown
+BTN H3D /I  
         /O /H HotasDMSDown 
-BTN H3L /I  /H HotasCoolieSwitchLeft
+BTN H3L /I  /H  HotasChinaHatAft
         /O /H HotasDMSLeft 
-BTN H3R /I /H HotasCoolieSwitchRight
+BTN H3R /I /H HotasChinaHatForward 
         /O /H HotasDMSRight 
 
 
@@ -60,22 +60,18 @@ Rem ################################################
 Rem			Throttle
 Rem ################################################
 
-Rem T2/T3/T4/T5
-
-BTN T2 
+BTN T2 /H HotasCoolieSwitchUp
 BTN T3 /I /H  HotasMicSwitchDown
-	/O
+	/O /H HotasCoolieSwitchDown
 BTN T4 /I  /H  HotasMicSwitchForward  
-       /O H HotasChinaHatForward 
+       /O /H HotasCoolieSwitchRight
 BTN T5 /I /H  HotasMicSwitchAft
-       /O /H HotasChinaHatAft
+       /O /H HotasCoolieSwitchLeft
 
-Rem T6
 
 BTN T6 /I /T LAAPPathHold /T LAAPAltitudeHeadingHold /T LAAPAltitudeBankHold 
        /O HotasLeftThrottleButton
 
-Rem T7/T8/T9/T10
 
 BTN T7 /I 
        /O /P HotasPinkySwitchAft  /R HotasPinkySwitchCenter
