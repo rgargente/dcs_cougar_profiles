@@ -19,7 +19,7 @@ BTN TG1  /H GunTrigger_2
 BTN TG2 /H GunTrigger_2 
 
 BTN S1  /H APOverride
-BTN S2 /I APLevel
+BTN S2 /I APAttHold
 	/O APDisengage
 BTN S4 /H WheelBrakeOnOff
 
@@ -31,7 +31,8 @@ BTN H2L  /H TargetSizeDown
 BTN H2R /H TargetSizeUp
 
 BTN H3U ShkvalZoomIn
-BTN H3D ShkvalZoomOut
+BTN H3D /I ModeNav
+	/O ShkvalZoomOut
 BTN H3L /I RippleTime
         /O Cannon
 BTN H3R /I  RippleQty 
@@ -60,7 +61,7 @@ BTN T7 /P 6 ModeA2A
 BTN T8 /P ModeA2G
 	/R 1 ModeNav ModeNav ModeNav ModeNav
 
-BTN T3 /I APAttHold
+BTN T3 /I APLevel
 	/O APEngage
 
 BTN T5 WaypointPrev
