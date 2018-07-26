@@ -1,4 +1,4 @@
-USE MDEF DCSWarthog_Viper.tmm
+USE MDEF DCS_A10C.tmm
 
 USE ALL_DIRECTX_BUTTONS 
 
@@ -62,8 +62,10 @@ BTN T2 /H CageSight
 BTN T3 /H UncageMissile
 
 
-BTN T5 RadarOperLeft
-BTN T4 RadarOperRight
+BTN T5 /I RadarOperLeft
+	/O RadarRangeDec
+BTN T4 /I RadarOperRight
+	/O RadarRangeInc
 
 BTN T7 /P FlapSwitchAuto /R FlapSwitchFix
 BTN T8 /P FlapSwitchUp /R FlapSwitchFix
@@ -71,7 +73,7 @@ BTN T8 /P FlapSwitchUp /R FlapSwitchFix
 BTN T9  b Rem speedbrake
 BTN T10 p Rem parachute
 
-RNG 1 4  RadarRangeDec RadarRangeInc
+Rem RNG 1 4  RadarRangeDec RadarRangeInc Rem Now used for radar tilt
 
 Rem -------------------------------------
 Rem     Microstick/TDCSlew
